@@ -9,30 +9,53 @@
  */
 public class PowerPill
 {
-    // TODO - replace this line with instruction from step 1
+    private final static int DEFAULT_POWER = 10;
+
 
     // instance variables
-    // TODO - replace this line with instruction from step 2
-    // TODO - replace this line with instruction from step 3
+    private int power;
+    private String name;
 
     // constructors
+    public PowerPill(String name) {
+        this.name = name;
+        this.power = DEFAULT_POWER;
+    }
 
-    // TODO - replace this line with instruction from step 4
+    /**
+     \* Initializes this power pill to a default power value
+     \* and sets the name of the pill to name.
+     \* @param name the name of this power pill.
+     */
+    public PowerPill(String name, int power) {
+        this.name = name;
+        this.power = power;
+    }
 
-    // TODO - replace this line with instruction from step 5
 
 
     // accessor methods
 
-    // TODO - replace this line with instruction from step 6
-
+    public String getName() {
+        return this.name;
+    }
+    public int getPower() {
+        return this.power;
+    }
 
     // mutator methods
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setPower(int power) {
+        this.power = power;
+    }
 
-    // TODO - replace this line with instruction from step 7
 
     // toString method
 
-    // TODO - replace this line with instruction from step 8
+    public String toString() {
+        return "PowerPill " + this.name + " = " + this.power;
+    }
 
 }
